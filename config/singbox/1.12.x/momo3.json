@@ -33,7 +33,7 @@
     {"tag": "🇭🇰 香港手动", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇭🇰|HK|hk|香港|港|HongKong"]}, {"action": "exclude", "keywords": ["免费"]}]},
     {"tag": "🇯🇵 日本手动", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇯🇵|JP|jp|日本|日|Japan"]}, {"action": "exclude", "keywords": ["免费"]}]},
     {"tag": "🇸🇬 狮城手动", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["新加坡|坡|狮城|SG|Singapore"]}, {"action": "exclude", "keywords": ["免费"]}]},
-    {"tag": "🇺🇲 美国手动", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇺🇸|US|us|美国|美|United States"]}， {"action": "exclude", "keywords": ["AUS|RUS|免费"]}]},
+    {"tag": "🇺🇲 美国手动", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "include", "keywords": ["🇺🇸|US|us|美国|美|United States"]}, {"action": "exclude", "keywords": ["AUS|RUS|免费"]}]},
     {"tag": "🐸 手动选择", "type": "selector", "outbounds": ["{all}"], "filter": [{"action": "exclude", "keywords": ["网站|流量|地址|剩余|过期|免费|时间|有效|Traffic|ExpireDate|GB|Expire Date"]}]},
     {"tag": "♻️ 自动选择", "type": "urltest", "outbounds": ["{all}"], "filter": [{"action": "exclude", "keywords": ["官网|到期时间|剩余|流量|套餐|免费|订阅|全球直连|GB|Expire Date|Traffic|ExpireDate"]}], "interval": "10m", "tolerance": 100},
     {"tag": "🍃 延迟辅助", "type": "urltest", "outbounds": ["🚀 默认代理", "🎯 全球直连"]},
@@ -90,7 +90,7 @@
       {"tag": "geoip-netflix", "type": "remote", "format": "binary", "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/netflix.srs", "download_detour": "🎯 全球直连"},
       {"tag": "geoip-cn", "type": "remote", "format": "binary", "url": "https://github.com/qljsyph/ruleset-icon/raw/refs/heads/main/sing-box/geoip/China-ASN-combined-ip.srs", "download_detour": "🎯 全球直连"}
     ],
-    "final": "🐠 漏网之鱼",
+    "final": "🐠 漏网之鱼"，
     "default_domain_resolver": {"server": "public"}
   },
   "inbounds": [
@@ -101,59 +101,59 @@
       "listen_port": 1053
     },
     {
-      "tag": "http-in",
-      "type": "http",
-      "listen": "::",
+      "tag": "http-in"，
+      "type": "http"，
+      "listen": "::"，
       "listen_port": 8080
     },
     {
-      "tag": "socks-in",
-      "type": "socks",
-      "listen": "::",
+      "tag": "socks-in"，
+      "type": "socks"，
+      "listen": "::"，
       "listen_port": 1080
     },
     {
-      "tag": "redirect-in",
-      "type": "redirect",
-      "listen": "::",
+      "tag": "redirect-in"，
+      "type": "redirect"，
+      "listen": "::"，
       "listen_port": 7890
     },
     {
-      "tag": "tproxy-in",
-      "type": "tproxy",
-      "listen": "::",
+      "tag": "tproxy-in"，
+      "type": "tproxy"，
+      "listen": "::"，
       "listen_port": 7891
-    },
+    }，
     {
-      "tag": "tun-in",
-      "type": "tun",
-      "interface_name": "momo",
+      "tag": "tun-in"，
+      "type": "tun"，
+      "interface_name": "momo"，
       "address": [
         "172.31.0.1/30",
         "fdfe:dcba:9876::1/126"
       ],
-      "auto_route": false,
+      "auto_route": false，
       "auto_redirect": false
     }
   ],
   "experimental": {
     "cache_file": {
-      "enabled": true,
-      "path": "/etc/momo/run/cache.db",
+      "enabled": true，
+      "path": "/etc/momo/run/cache.db"，
       "store_fakeip": false
     },
     "clash_api": {
-      "external_controller": "0.0.0.0:9095",
-      "external_ui": "/etc/momo/run/ui",
-      "external_ui_download_url": "https://gh-proxy.com/https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip",
-      "external_ui_download_detour": "🎯 全球直连",
-      "secret": "",
+      "external_controller": "0.0.0.0:9095"，
+      "external_ui": "/etc/momo/run/ui"，
+      "external_ui_download_url": "https://github.com/Zephyruso/zashboard/archive/refs/heads/gh-pages.zip"，
+      "external_ui_download_detour": "🎯 全球直连"，
+      "secret": ""，
       "default_mode": "rule"
     }
   },
   "log": {
-    "disabled": false,
-    "level": "info",
+    "disabled": false，
+    "level": "info"，
     "timestamp": true
   }
 }
