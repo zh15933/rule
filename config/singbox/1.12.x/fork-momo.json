@@ -10,7 +10,7 @@
           "timeout": "3s"
       },
       "url": "http://192.168.5.6:3001/xiaohuihui/download/collection/233?target=sing-box",
-      "exclude": "官网|剩余|流量|套餐|免费|订阅|全球直连|到期时间|GB|Expire Date|Traffic|ExpireDate|三网",
+      "exclude": "官网|剩余|流量|套餐|免费|订阅|全球直连|到期时间|GB|Expire Date|Traffic|ExpireDate|三网|🇹🇼 台湾",
       "download_detour": "🎯 全球直连",
       "update_interval": "12h"
     }
